@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+// ! VARIABLES HERE //variables created for font family
+$font:Redressed;
+$font2:Merienda;
+//! OBJECTS HERE //objects created here
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+
+// ! importing Css
+@import './navbar'; //info :- navigation bar css icludes here
+@import './hero'; //info:- brand name with background image and signup button includes here
+@import './card1'; //3rd section cards which built using css Grids includes here
+@import './branding'; // 4th section Brand slogan with some random image includes here
+@import './download'; // 5th section Download app buttons includes here
+@import './cards2.scss'; //6th section cards with flex box includes here
+@import './footer'; //footer with automated year update included here
+
+
+
+

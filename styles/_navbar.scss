@@ -1,0 +1,48 @@
+//! header section starts here which includes navbar buttons
+header {
+    width: 100%;
+  
+    .navbar {
+      background: rgba(110, 216, 205, 0.493);
+      display: flex;
+      padding: 15px;
+      align-items: center;
+      width: 100%;
+      .b_name {
+        font-family: $font;
+        font-weight: bolder;
+      }
+  
+      .nav_btn {
+        position: absolute;
+        right: 10px;
+  
+        .btn {
+          padding: 10px 22px;
+  
+          margin: 0px 3px;
+          background: transparent;
+          outline: none;
+  
+          border: 1px solid black;
+          border-radius: 3px;
+          cursor: pointer;
+          font-family: $font2;
+          transition-duration: 0.4s;
+  
+          &:hover {
+            background: rgba(255, 2, 78, 0.938);
+            border: red;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  //! header section ends here
+
+
+  @media (max-width: 768px) {
+    .nav_btn {
+      display: none;
+    }}

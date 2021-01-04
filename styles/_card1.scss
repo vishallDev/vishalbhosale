@@ -1,0 +1,83 @@
+// !css grid cards section stars here
+
+.card_container {
+    margin: 9px auto;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "img desc desc desc "
+        " desc1 desc1 desc1 img1"
+        "img2 desc2 desc2 desc2 "
+        " desc3 desc3 desc3 img3";
+      align-items: center;
+  
+      .image {
+        height: 190px;
+        width: 180px;
+        margin: 4px auto;
+        border-radius: 4px;
+        box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+      .description {
+        overflow: hidden;
+        height: 180px;
+        margin: 4px auto;
+        padding: 0 9px;
+        display: flex;
+        align-items: center;
+        font-family: $font2;
+      }
+      .img {
+        grid-area: img;
+      }
+      .desc {
+        grid-area: desc;
+      }
+      .img1 {
+        grid-area: img1;
+      }
+      .desc1 {
+        grid-area: desc1;
+      }
+      .img2 {
+        grid-area: img2;
+      }
+      .desc2 {
+        grid-area: desc2;
+      }
+      .img3 {
+        grid-area: img3;
+      }
+      .desc3 {
+        grid-area: desc3;
+      }
+    }
+  }
+  //! cards section starts herer
+@media (max-width: 768px) {
+    .card_container {
+        .cards {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          text-align: center;
+          .image {
+            height: 160px;
+            width: 160px;
+          }
+          .description {
+            height: 100%;
+            overflow: hidden;
+            font-size: 11px;
+            padding: 4px 3px;
+          }
+        }
+      }
+    
+}
